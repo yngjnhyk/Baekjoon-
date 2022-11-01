@@ -1,4 +1,5 @@
-a, b, c = map(int,input().split())
+a=["1-1칸", "1-2칸", "1-3칸"]
+b=["2-1칸", "2-2칸", "2-3칸"]
 
-print(max(a,b,c))
-print(min(a,b,c))
+print(a, end = "**end 입니다** ")
+print(b, sep = "**sep입니다**")
