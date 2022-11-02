@@ -1,5 +1,3 @@
-a=["1-1칸", "1-2칸", "1-3칸"]
-b=["2-1칸", "2-2칸", "2-3칸"]
-
-print(a, end = "**end 입니다** ")
-print(b, sep = "**sep입니다**")
+for i in range(9):
+    line = list(map(int, input().split()))
+    print(max(line))
