@@ -3,7 +3,7 @@ alphabet = list(set(words))  #입력된 값 words에서 기존 단어의 순서�
 
 cnt_list = []
 for i in alphabet:  #ex)words = hello, alphabet = ['O', 'E', 'L', 'H']이면, 하나씩 i에 대입해 반복해라.
-    cnt = words.count(i)  #처음에 주어진 값 HELLO에서 각 문자열이 몇개인지 센다. ['O', 'E', 'L', 'H'] -> 1,2,1,1가 cnt이다.
+    cnt = words.count(i)  #처음에 주어진 값 HELLO에서 각 문자열이 몇개인지 센다. ['O', 'E', 'L', 'H'] -> 1,200-자료구조1,1,1가 cnt이다.
     cnt_list.append(cnt)  #cnt를 cnt_list에 넣어 list형태로 바꾼다.
 
 if cnt_list.count(max(cnt_list)) > 1:  #cnt_list에서 최댓값의 갯수가 1보다 크면(=최댓값이 둘 이상이면)

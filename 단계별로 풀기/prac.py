@@ -1,5 +1,4 @@
-a_list = ['***', '* *', '***']
-b_list = []
-b_list.append(a_list * 3)
+stack = [1,2,3,4,5]
 
-print(b_list)
+print(stack[-1])
+
