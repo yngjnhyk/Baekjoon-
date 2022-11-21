@@ -1,5 +1,3 @@
-string = 'Hello, World!'
-reversed_str = reversed(string)
+queue = [1,2,3,4,5]
 
-print(f'Original String: {string}')
-print(f'Reversed String: {reversed_str}')
+print(queue.pop())
