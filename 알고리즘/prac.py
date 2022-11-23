@@ -1,3 +1,2 @@
-ans = "a"
-ans += "n"
-print(ans)
+N = list(input())
+print(N)
