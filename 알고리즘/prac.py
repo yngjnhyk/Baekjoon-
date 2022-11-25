@@ -1,2 +1,1 @@
-N = list(input())
-print(N)
+print(int(str(50), int(8)))
