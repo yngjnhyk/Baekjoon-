@@ -1,1 +1,2 @@
-print(int(str(50), int(8)))
+for i in range(1, 2):
+    print(i)
