@@ -1,13 +1,6 @@
-text1 = "네이스123"
-text2 = "123123"
-text3 = "!@#$"
-text4 = "!@#$1234"
-text5 = "wtf"
-text6 = "wtf123123"
+A, B, C = map(int, input().split())
 
-print(text1.isalnum())
-print(text2.isalnum())
-print(text3.isalnum())
-print(text4.isalnum())
-print(text5.isalnum())
-print(text6.isalnum())
+if B >= C:  #손익분기점이 존재하지 않을 때는 고정비용과 상관 없이 가변비용(B)이 노트북의 판매가격(C)보다 크게 되면 존재하지 않는다. 그렇지 않고 판매가격(C)보다 낮은 경우에는 되게 많이 팔아야겠지만 손익분기점이 결국엔 생긴다.
+    print(-1)
+else:
+    print(A//(C-B) + 1)  #처음 질문을 보고 판매량을 N으로 두고, 단순하게 식을 세우면 총 수입 = 고정비용 + 가변비용(A + B * N < C * N)이지만 손익분기점이 발생하는 때의 판매량을 식으로 나타내면 N= A/(C-B)이다. 하지만 이 식은 손익분기점인 때가 되s고, 최초로 이익이 발생하는 시점은 이 식에서 보다 판매량을 하나 더 더해야 한다.
